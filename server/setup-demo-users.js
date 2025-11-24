@@ -1,5 +1,5 @@
-const mysql = require('mysql2/promise');
-const bcrypt = require('bcryptjs');
+import mysql from 'mysql2/promise';
+import bcrypt from 'bcryptjs';
 
 async function setupDemoUsers() {
   const connection = await mysql.createConnection(process.env.DATABASE_URL);
@@ -39,4 +39,4 @@ async function setupDemoUsers() {
   }
 }
 
-setupDemoUsers();
+export { setupDemoUsers };
