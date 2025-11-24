@@ -10,6 +10,11 @@ import { APP_LOGO } from "@/const";
 
 export default function Login() {
   const [, setLocation] = useLocation();
+  
+  // デモ環境では自動的にダッシュボードにリダイレクト
+  useEffect(() => {
+    setLocation("/dashboard");
+  }, [setLocation]);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isAnimating, setIsAnimating] = useState(false);
