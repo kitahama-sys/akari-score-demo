@@ -10,14 +10,25 @@ import { parsePeriodString } from "@shared/periodUtils";
 
 export default function Results() {
   const { user } = useAuth();
+  
+  // デモ環境ではデモユーザーを使用
+  const demoUser = {
+    id: 1,
+    username: "demo-user1",
+    name: "デモユーザー1",
+    role: "user" as const,
+    loginMethod: "local" as const
+  };
+  
+  const displayUser = user || demoUser;
   const [, setLocation] = useLocation();
   const [showAllItems, setShowAllItems] = useState(false);
 
   const categoriesQuery = trpc.evaluation.getCategories.useQuery();
   const itemsQuery = trpc.evaluation.getAllItems.useQuery();
   const latestEvaluationQuery = trpc.evaluation.getLatestEvaluation.useQuery(
-    { userId: user?.id || 0 },
-    { enabled: !!user }
+    { userId: displayUser.id },
+    { enabled: true }
   );
 
   const categories = categoriesQuery.data || [];

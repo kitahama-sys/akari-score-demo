@@ -29,6 +29,17 @@ type Step = {
 
 export default function Roadmap() {
   const { user } = useAuth();
+  
+  // デモ環境ではデモユーザーを使用
+  const demoUser = {
+    id: 1,
+    username: "demo-user1",
+    name: "デモユーザー1",
+    role: "user" as const,
+    loginMethod: "local" as const
+  };
+  
+  const displayUser = user || demoUser;
   const [, setLocation] = useLocation();
   const [selectedPeriod, setSelectedPeriod] = useState(getCurrentPeriod());
   const [longTermVision, setLongTermVision] = useState("");
@@ -40,7 +51,7 @@ export default function Roadmap() {
   const utils = trpc.useUtils();
   const roadmapQuery = trpc.roadmap.getByPeriod.useQuery(
     { evaluationPeriod: periodToString(selectedPeriod) },
-    { enabled: !!user }
+    { enabled: true }
   );
   const saveMutation = trpc.roadmap.save.useMutation();
 

@@ -9,10 +9,21 @@ import { parsePeriodString, comparePeriods } from "@shared/periodUtils";
 
 export default function History() {
   const { user, loading: authLoading, isAuthenticated } = useAuth();
+  
+  // デモ環境ではデモユーザーを使用
+  const demoUser = {
+    id: 1,
+    username: "demo-user1",
+    name: "デモユーザー1",
+    role: "user" as const,
+    loginMethod: "local" as const
+  };
+  
+  const displayUser = user || demoUser;
   const [, setLocation] = useLocation();
 
   const evaluationsQuery = trpc.evaluation.getMyEvaluations.useQuery(undefined, {
-    enabled: !!user,
+    enabled: true,
   });
 
   const itemsQuery = trpc.evaluation.getAllItems.useQuery();
@@ -25,9 +36,9 @@ export default function History() {
     );
   }
 
-  if (!isAuthenticated || !user) {
-    return <Redirect to="/" />;
-  }
+  // if (!isAuthenticated || !user) {
+  //   return <Redirect to="/" />;
+  // }
 
   const evaluations = evaluationsQuery.data || [];
   const items = itemsQuery.data || [];

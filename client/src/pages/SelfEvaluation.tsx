@@ -14,6 +14,17 @@ import { PeriodSelector } from "@/components/PeriodSelector";
 
 export default function SelfEvaluation() {
   const { user } = useAuth();
+  
+  // デモ環境ではデモユーザーを使用
+  const demoUser = {
+    id: 1,
+    username: "demo-user1",
+    name: "デモユーザー1",
+    role: "user" as const,
+    loginMethod: "local" as const
+  };
+  
+  const displayUser = user || demoUser;
   const [, setLocation] = useLocation();
   const [selectedPeriod, setSelectedPeriod] = useState<EvaluationPeriod>(getCurrentPeriod());
   const [scores, setScores] = useState<{ [key: number]: number }>({});
@@ -33,7 +44,7 @@ export default function SelfEvaluation() {
       evaluationType: 'self',
     },
     {
-      enabled: !!user,
+      enabled: true,
     }
   );
 

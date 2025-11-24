@@ -7,14 +7,25 @@ import { useLocation } from "wouter";
 
 export default function MVV() {
   const { user, loading, isAuthenticated } = useAuth();
+  
+  // デモ環境ではデモユーザーを使用
+  const demoUser = {
+    id: 1,
+    username: "demo-user1",
+    name: "デモユーザー1",
+    role: "user" as const,
+    loginMethod: "local" as const
+  };
+  
+  const displayUser = user || demoUser;
   const [, setLocation] = useLocation();
   const [visibleSections, setVisibleSections] = useState<string[]>([]);
 
-  useEffect(() => {
-    if (!loading && !isAuthenticated) {
-      setLocation("/");
-    }
-  }, [loading, isAuthenticated, setLocation]);
+  // useEffect(() => {
+  //   if (!loading && !isAuthenticated) {
+  //     setLocation("/");
+  //   }
+  // }, [loading, isAuthenticated, setLocation]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -47,9 +58,9 @@ export default function MVV() {
     );
   }
 
-  if (!isAuthenticated || !user) {
-    return null;
-  }
+  // if (!isAuthenticated || !user) {
+  //   return null;
+  // }
 
   const valueItems = [
     "笑顔と挨拶を大切にする",
