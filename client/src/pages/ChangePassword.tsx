@@ -11,6 +11,17 @@ import { useLocation } from "wouter";
 
 export default function ChangePassword() {
   const { user, loading } = useAuth();
+  
+  // デモ環境ではデモユーザーを使用
+  const demoUser = {
+    id: 1,
+    username: "demo-user1",
+    name: "デモユーザー1",
+    role: "user" as const,
+    loginMethod: "local" as const
+  };
+  
+  const displayUser = user || demoUser;
   const [, setLocation] = useLocation();
   const [formData, setFormData] = useState({
     currentPassword: "",
@@ -40,10 +51,10 @@ export default function ChangePassword() {
     );
   }
 
-  if (!user) {
-    setLocation("/login");
-    return null;
-  }
+  // if (!user) {
+  //   setLocation("/login");
+  //   return null;
+  // }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

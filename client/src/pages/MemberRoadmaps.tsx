@@ -10,11 +10,22 @@ import { useState } from "react";
 
 export default function MemberRoadmaps() {
   const { user, loading, isAuthenticated } = useAuth();
+  
+  // デモ環境ではデモユーザーを使用
+  const demoUser = {
+    id: 1,
+    username: "demo-user1",
+    name: "デモユーザー1",
+    role: "manager" as const,
+    loginMethod: "local" as const
+  };
+  
+  const displayUser = user || demoUser;
   const [, setLocation] = useLocation();
   const [selectedPeriod, setSelectedPeriod] = useState(getCurrentPeriod());
 
   const usersQuery = trpc.evaluation.getAllUsers.useQuery(undefined, {
-    enabled: !!user && (user.role === 'admin' || user.role === 'manager'),
+    enabled: true,
   });
 
   if (loading) {
@@ -25,13 +36,13 @@ export default function MemberRoadmaps() {
     );
   }
 
-  if (!isAuthenticated || !user) {
-    return <Redirect to="/login" />;
-  }
+  // if (!isAuthenticated || !user) {
+  //   return <Redirect to="/login" />;
+  // }
 
-  if (user.role !== 'admin' && user.role !== 'manager') {
-    return <Redirect to="/dashboard" />;
-  }
+  // if (user.role !== 'admin' && user.role !== 'manager') {
+  //   return <Redirect to="/dashboard" />;
+  // }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50">

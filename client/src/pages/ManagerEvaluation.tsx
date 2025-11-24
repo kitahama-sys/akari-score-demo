@@ -9,11 +9,22 @@ import { Redirect, useLocation } from "wouter";
 
 export default function ManagerEvaluation() {
   const { user, loading: authLoading, isAuthenticated } = useAuth();
+  
+  // デモ環境ではデモユーザーを使用
+  const demoUser = {
+    id: 1,
+    username: "demo-user1",
+    name: "デモユーザー1",
+    role: "manager" as const,
+    loginMethod: "local" as const
+  };
+  
+  const displayUser = user || demoUser;
   const [, setLocation] = useLocation();
   const [searchQuery, setSearchQuery] = useState("");
 
   const usersQuery = trpc.admin.getAllUsers.useQuery(undefined, {
-    enabled: !!user && (user.role === 'admin' || user.role === 'manager'),
+    enabled: true,
   });
 
   if (authLoading) {
@@ -24,17 +35,17 @@ export default function ManagerEvaluation() {
     );
   }
 
-  if (!isAuthenticated || !user) {
-    return <Redirect to="/" />;
-  }
+  // if (!isAuthenticated || !user) {
+  //   return <Redirect to="/" />;
+  // }
 
-  if (user.role !== 'admin' && user.role !== 'manager') {
-    return <Redirect to="/dashboard" />;
-  }
+  // if (user.role !== 'admin' && user.role !== 'manager') {
+  //   return <Redirect to="/dashboard" />;
+  // }
 
   const users = usersQuery.data || [];
   const filteredUsers = users.filter(u => 
-    u.id !== user.id && // Exclude self
+    u.id !== displayUser.id && // Exclude self
     u.name?.toLowerCase().includes(searchQuery.toLowerCase())
   );
 

@@ -9,6 +9,17 @@ import { useEffect, useState } from "react";
 
 export default function MemberRoadmapView() {
   const { user, loading, isAuthenticated } = useAuth();
+  
+  // デモ環境ではデモユーザーを使用
+  const demoUser = {
+    id: 1,
+    username: "demo-user1",
+    name: "デモユーザー1",
+    role: "manager" as const,
+    loginMethod: "local" as const
+  };
+  
+  const displayUser = user || demoUser;
   const [, setLocation] = useLocation();
   const params = useParams();
   const userId = params.userId ? parseInt(params.userId) : null;
@@ -18,7 +29,7 @@ export default function MemberRoadmapView() {
   const period = searchParams.get('period') || '';
 
   const userQuery = trpc.users.getAll.useQuery(undefined, {
-    enabled: !!user && (user.role === 'admin' || user.role === 'manager'),
+    enabled: true,
   });
 
   const roadmapQuery = trpc.roadmap.getByPeriod.useQuery(
@@ -36,13 +47,13 @@ export default function MemberRoadmapView() {
     );
   }
 
-  if (!isAuthenticated || !user) {
-    return <Redirect to="/login" />;
-  }
+  // if (!isAuthenticated || !user) {
+  //   return <Redirect to="/login" />;
+  // }
 
-  if (user.role !== 'admin' && user.role !== 'manager') {
-    return <Redirect to="/dashboard" />;
-  }
+  // if (user.role !== 'admin' && user.role !== 'manager') {
+  //   return <Redirect to="/dashboard" />;
+  // }
 
   if (!userId) {
     return <Redirect to="/member-roadmaps" />;
