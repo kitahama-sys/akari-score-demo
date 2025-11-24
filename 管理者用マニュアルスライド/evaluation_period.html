@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>評価期間の管理</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: linear-gradient(135deg, #FFF5F7 0%, #FFE8EE 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide-container {
+    width: 1280px;
+    min-height: 720px;
+    background: linear-gradient(135deg, #FFF5F7 0%, #FFE8EE 100%);
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .page-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #D64B6A;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+  }
+  .content-box {
+    background: white;
+    border-radius: 16px;
+    padding: 32px 40px;
+    box-shadow: 0 4px 12px rgba(214, 75, 106, 0.1);
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #D64B6A;
+    margin-bottom: 16px;
+  }
+  .text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4A4A4A;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  .step-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .step-number {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #FFB4C8 0%, #D64B6A 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .step-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4A4A4A;
+    line-height: 1.8;
+    padding-top: 4px;
+  }
+</style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="page-title">評価期間の管理</div>
+    
+      <div class="content-box">
+        <div class="section-title">評価期間の3つの状態</div>
+        <div class="step-list">
+          <div class="step-item">
+            <div class="step-number" style="background: linear-gradient(135deg, #FF6B6B 0%, #EE5A6F 100%);">●</div>
+            <div class="step-text">
+              <strong>予定（赤）：</strong>評価期間がまだ始まっていない状態。メンバーは自己評価を入力できません。
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number" style="background: linear-gradient(135deg, #FFD93D 0%, #FFC107 100%);">●</div>
+            <div class="step-text">
+              <strong>進行中（黄）：</strong>評価期間が進行中の状態。メンバーは自己評価を入力でき、管理者は上長評価を入力できます。
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number" style="background: linear-gradient(135deg, #6BCF7F 0%, #51B960 100%);">●</div>
+            <div class="step-text">
+              <strong>完了（緑）：</strong>評価期間が終了した状態。自己評価と上長評価の両方が完了しています。
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+</body>
+</html>

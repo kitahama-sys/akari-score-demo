@@ -1,0 +1,141 @@
+{
+  "project_info": {
+    "title": "灯SCORE 管理者用マニュアル",
+    "created": 1763527719.824984,
+    "last_updated": 1763528333.3058882,
+    "total_slides": 17
+  },
+  "slides": {
+    "title": "edited",
+    "what_is_akari": "edited",
+    "admin_role": "edited",
+    "login": "edited",
+    "dashboard": "edited",
+    "evaluation_period": "edited",
+    "evaluation_step1": "edited",
+    "evaluation_step2": "edited",
+    "evaluation_step3": "edited",
+    "evaluation_items": "edited",
+    "career_map": "edited",
+    "add_member": "edited",
+    "add_period": "edited",
+    "faq1": "edited",
+    "faq2": "edited",
+    "summary": "edited",
+    "contact": "edited"
+  },
+  "outline": [
+    {
+      "id": "title",
+      "title": "灯SCORE 管理者用マニュアル",
+      "summary": "株式会社PLACE LIBRE社内用の管理者向け操作マニュアル。温かみのあるデザインで、看護師メンバーの成長を支援するシステムの使い方を紹介。",
+      "image_plan": "/home/ubuntu/upload/pasted_file_SYws0H_image.png - The slide is a title slide for a manual. Image 1 shows a group of people collaborating, which fits the theme of a team-based evaluation system.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "what_is_akari",
+      "title": "灯SCOREとは",
+      "summary": "成長を灯すスコアシステムの概要。自己評価・上長評価・キャリアマップの3つの機能で、メンバーの成長を可視化し、温かく見守る。",
+      "image_plan": "/home/ubuntu/upload/search_images/7PmBkScYS7FN.jpg - The slide explains \"Akari SCORE\" as a system for supporting growth and mutual support. Image 12 shows a team working together and productive leadership, which aligns with the concept of a supportive evaluation system.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "admin_role",
+      "title": "管理者の役割",
+      "summary": "メンバーの成長を温かく見守る管理者の役割。自己評価の確認、上長評価の入力、キャリアマップでのサポートを行う。",
+      "image_plan": "/home/ubuntu/upload/pasted_file_Sx06sX_image.png - The slide describes the manager's role in supporting member growth. Image 4 shows two people (possibly a manager and an employee) discussing, which visually represents the manager's role in feedback and support.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "login",
+      "title": "ログイン方法",
+      "summary": "灯SCOREへのログイン手順。URLにアクセスし、管理者用のIDとパスワードを入力してログインする。",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "dashboard",
+      "title": "ダッシュボードの見方",
+      "summary": "ログイン後のダッシュボード画面の説明。評価待ちメンバー、進行中の評価期間、最近の活動が一目で確認できる。",
+      "image_plan": "/home/ubuntu/upload/search_images/oRUYUbb7fDhj.jpg - The slide explains the dashboard view. Image 18 is a clear, professional dashboard showing analytics and data, which is highly relevant.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "evaluation_period",
+      "title": "評価期間の管理",
+      "summary": "評価期間の3つの状態（予定・進行中・完了）を管理。通常3ヶ月または6ヶ月単位で設定する。",
+      "image_plan": "/home/ubuntu/upload/search_images/6rAB0LO3flXx.jpg - The slide discusses the three states of the evaluation period (Planned, In Progress, Completed). Image 9 is a \"Traffic Light Model\" (Red, Yellow, Green) which is a strong visual metaphor for status/progress states.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "evaluation_step1",
+      "title": "上長評価の入力（1/3）",
+      "summary": "ステップ1: 評価管理メニューから評価期間を選択し、メンバー一覧から評価するメンバーを選ぶ。",
+      "image_plan": "/home/ubuntu/upload/search_images/sZfoNL7HnLeK.png - This slide is the first step of the evaluation process. Image 15 is a performance review form, which visually represents the context of the evaluation process.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "evaluation_step2",
+      "title": "上長評価の入力（2/3）",
+      "summary": "ステップ2: メンバーが入力した自己評価を確認。各項目の点数とコメントを読み、メンバーの振り返りを理解する。",
+      "image_plan": "/home/ubuntu/upload/search_images/9Hs7hfVHe1Dx.png - This slide is about reviewing the self-evaluation. Image 16 shows a continuous performance planning cycle, which relates to the ongoing nature of review and feedback.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "evaluation_step3",
+      "title": "上長評価の入力（3/3）",
+      "summary": "ステップ3: 各評価項目に1〜5点で評価を入力し、温かいフィードバックコメントを記入して保存する。",
+      "image_plan": "/home/ubuntu/upload/search_images/7E2dPesFf1LM.png - This slide is about inputting the manager's evaluation and feedback. Image 17 is a graphic about performance review and feedback, which is highly relevant.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "evaluation_items",
+      "title": "評価項目",
+      "summary": "6つの評価項目で成長を評価。専門知識、コミュニケーション、チームワーク、問題解決力、リーダーシップ、成長意欲。",
+      "image_plan": "/home/ubuntu/upload/pasted_file_CZ68E9_image.png - The slide lists the 6 evaluation items, which are professional competencies. Image 6 shows hands stacked together, symbolizing teamwork, support, and professional collaboration, which fits the context of professional evaluation items.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "career_map",
+      "title": "キャリアマップの確認",
+      "summary": "メンバー管理からメンバーの詳細を開き、キャリアマップタブでメンバーの目標と成長の道筋を確認する。",
+      "image_plan": "/home/ubuntu/upload/search_images/TBVg8iSmHj2S.png - The slide is about checking the career map. Image 13 is a visual representation of a career plan/path, which directly matches the slide content.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "add_member",
+      "title": "新しいメンバーを追加",
+      "summary": "4ステップで新しいメンバーを追加。メンバー管理から追加ボタンをクリックし、情報を入力して保存する。",
+      "image_plan": "/home/ubuntu/upload/pasted_file_YZwimH_image.png - The slide is about adding a new member. Image 5 shows a diverse team celebrating or high-fiving, representing the welcoming of new members and teamwork.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "add_period",
+      "title": "評価期間を追加",
+      "summary": "新しい評価期間を作成する手順。評価期間管理から追加ボタンをクリックし、期間名と開始・終了日を設定する。",
+      "image_plan": "/home/ubuntu/upload/search_images/IAxtexefWaam.jpg - The slide is about adding a new evaluation period and managing its progress. Image 19 shows a project progress dashboard with Gantt charts, which visually represents the management of time-bound periods.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "faq1",
+      "title": "よくある質問（1/2）",
+      "summary": "Q1: メンバーが自己評価を提出したか確認する方法。Q2: 評価期間を途中で変更できるか。",
+      "image_plan": "/home/ubuntu/upload/search_images/x5cv8ZfvHVnu.png - This is a Q&A slide about checking self-evaluation status and correcting the manager's evaluation. Image 20 is a generic placeholder and not relevant. Image 21 or 22 are about feedback, but not specifically about status checks. I will use an image related to analytics/status check. Image 20 is a placeholder, so I will select a relevant image from the remaining options. Image 2 is a dashboard/analytics view which is a good fit for checking status.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "faq2",
+      "title": "よくある質問（2/2）",
+      "summary": "Q3: メンバーのパスワードを忘れた場合の対処法。Q4: 評価項目を追加できるか。",
+      "image_plan": "/home/ubuntu/upload/search_images/5RgndW5hIgGF.webp - This is a Q&A slide about password reset and deleting evaluation periods. Image 21 is about feedback and growth, which is a good fit for the overall theme of the manual.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "summary",
+      "title": "まとめ",
+      "summary": "灯SCOREでメンバーの成長を温かく見守る。評価は数字だけでなく、温かい言葉で成長を支援することが大切。",
+      "image_plan": "/home/ubuntu/upload/search_images/qa0u7Cyum8Xh.jpg - This is the summary slide, emphasizing feedback and growth. Image 22 is a graphic about feedback, its meaning, purpose, and effects, which strongly supports the summary message.",
+      "slide_template_key": ""
+    }
+  ]
+}

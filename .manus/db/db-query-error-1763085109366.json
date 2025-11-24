@@ -1,0 +1,8 @@
+{
+  "query": "SELECT * FROM activity_logs ORDER BY created_at DESC LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46BqkDT2eofWM8H.root --database 8NGFXyzBvbriU6UGnrxDYi --execute SELECT * FROM activity_logs ORDER BY created_at DESC LIMIT 5",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1146 (42S02) at line 1: Table '8ngfxyzbvbriu6ugnrxdyi.activity_logs' doesn't exist"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS activityLogs (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  userId INT NOT NULL,\n  activityType ENUM('self_evaluation_submitted', 'manager_evaluation_completed', 'roadmap_updated', 'evaluation_period_started', 'evaluation_period_ended') NOT NULL,\n  description TEXT NOT NULL,\n  evaluationPeriod VARCHAR(20),\n  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46BqkDT2eofWM8H.root --database 8NGFXyzBvbriU6UGnrxDYi --execute CREATE TABLE IF NOT EXISTS activityLogs (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  userId INT NOT NULL,\n  activityType ENUM('self_evaluation_submitted', 'manager_evaluation_completed', 'roadmap_updated', 'evaluation_period_started', 'evaluation_period_ended') NOT NULL,\n  description TEXT NOT NULL,\n  evaluationPeriod VARCHAR(20),\n  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL\n)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 2550
+}

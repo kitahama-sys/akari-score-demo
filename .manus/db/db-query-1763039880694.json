@@ -1,0 +1,31 @@
+{
+  "query": "SELECT * FROM categories ORDER BY displayOrder",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46BqkDT2eofWM8H.root --database 8NGFXyzBvbriU6UGnrxDYi --execute SELECT * FROM categories ORDER BY displayOrder",
+  "rows": [
+    {
+      "id": "30004",
+      "name": "基本スキル",
+      "description": "NULL",
+      "displayOrder": "1",
+      "createdAt": "2025-11-12 21:42:43"
+    },
+    {
+      "id": "30005",
+      "name": "マインド",
+      "description": "NULL",
+      "displayOrder": "2",
+      "createdAt": "2025-11-12 21:42:49"
+    },
+    {
+      "id": "30006",
+      "name": "テクニカルスキル",
+      "description": "NULL",
+      "displayOrder": "3",
+      "createdAt": "2025-11-12 21:42:51"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tdescription\tdisplayOrder\tcreatedAt\n30004\t基本スキル\tNULL\t1\t2025-11-12 21:42:43\n30005\tマインド\tNULL\t2\t2025-11-12 21:42:49\n30006\tテクニカルスキル\tNULL\t3\t2025-11-12 21:42:51\n",
+  "stderr": "",
+  "execution_time_ms": 1657
+}

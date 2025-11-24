@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO users (openId, name, username, passwordHash, role) VALUES ('admin-openid-unique', '管理者', 'admin', '$2b$10$0gWjPO8le/YVBKkQ1YToDek1raZWT00B2Y4GfKBUsYZDzpQheJw6u', 'admin');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46BqkDT2eofWM8H.root --database 8NGFXyzBvbriU6UGnrxDYi --execute INSERT INTO users (openId, name, username, passwordHash, role) VALUES ('admin-openid-unique', '管理者', 'admin', '$2b$10$0gWjPO8le/YVBKkQ1YToDek1raZWT00B2Y4GfKBUsYZDzpQheJw6u', 'admin');",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1543
+}

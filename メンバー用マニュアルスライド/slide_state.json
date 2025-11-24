@@ -1,0 +1,138 @@
+{
+  "project_info": {
+    "title": "灯SCORE メンバー用マニュアル",
+    "created": 1763528749.1219015,
+    "last_updated": 1763528749.1219018,
+    "total_slides": 14
+  },
+  "slides": {
+    "title": "edited",
+    "what_is_akari": "edited",
+    "login": "edited",
+    "dashboard": "edited",
+    "self_evaluation_step1": "edited",
+    "self_evaluation_step2": "edited",
+    "self_evaluation_step3": "edited",
+    "evaluation_items": "edited",
+    "manager_evaluation": "edited",
+    "career_map_step1": "edited",
+    "career_map_step2": "edited",
+    "growth_graph": "edited",
+    "faq": "edited",
+    "summary": "edited"
+  },
+  "outline": [
+    {
+      "id": "title",
+      "title": "灯SCORE メンバー用マニュアル",
+      "summary": "成長を灯す、温かい評価システムのメンバー向けマニュアル",
+      "image_plan": "/home/ubuntu/upload/pasted_file_SYws0H_image.png - The slide is a title slide for a manual. Image 1 shows a group of people collaborating, which fits the theme of a team-based evaluation system.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "what_is_akari",
+      "title": "灯SCOREとは",
+      "summary": "成長を可視化する評価システム、温かいフィードバック、キャリアマップで未来を描く",
+      "image_plan": "/home/ubuntu/upload/search_images/7PmBkScYS7FN.jpg - The slide explains \"Akari SCORE\" as a system for supporting growth and mutual support. Image 12 shows a team working together and productive leadership, which aligns with the concept of a supportive evaluation system.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "login",
+      "title": "ログイン方法",
+      "summary": "ウェブサイトにアクセスし、ユーザー名とパスワードを入力してログイン",
+      "image_plan": "/home/ubuntu/upload/pasted_file_Sx06sX_image.png - The slide describes the manager's role in supporting member growth. Image 4 shows two people (possibly a manager and an employee) discussing, which visually represents the manager's role in feedback and support.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "dashboard",
+      "title": "ダッシュボードの見方",
+      "summary": "自己評価入力、評価結果確認、成長振り返り、キャリアマップ、パスワード変更、MVV確認",
+      "image_plan": "",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "self_evaluation_step1",
+      "title": "自己評価の入力（1/3）",
+      "summary": "評価期間を選択し、評価したい期間の評価項目を表示",
+      "image_plan": "/home/ubuntu/upload/search_images/oRUYUbb7fDhj.jpg - The slide explains the dashboard view. Image 18 is a clear, professional dashboard showing analytics and data, which is highly relevant.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "self_evaluation_step2",
+      "title": "自己評価の入力（2/3）",
+      "summary": "基本スキル、マインド、テクニカルスキルの各項目を1〜5点で評価",
+      "image_plan": "/home/ubuntu/upload/search_images/6rAB0LO3flXx.jpg - The slide discusses the three states of the evaluation period (Planned, In Progress, Completed). Image 9 is a \"Traffic Light Model\" (Red, Yellow, Green) which is a strong visual metaphor for status/progress states.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "self_evaluation_step3",
+      "title": "自己評価の入力（3/3）",
+      "summary": "すべての項目を評価したら保存ボタンをクリック",
+      "image_plan": "/home/ubuntu/upload/search_images/sZfoNL7HnLeK.png - This slide is the first step of the evaluation process. Image 15 is a performance review form, which visually represents the context of the evaluation process.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "evaluation_items",
+      "title": "評価項目",
+      "summary": "専門知識・技術、コミュニケーション、チームワーク、問題解決力、リーダーシップ、成長意欲の6項目",
+      "image_plan": "/home/ubuntu/upload/search_images/9Hs7hfVHe1Dx.png - This slide is about reviewing the self-evaluation. Image 16 shows a continuous performance planning cycle, which relates to the ongoing nature of review and feedback.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "manager_evaluation",
+      "title": "上長評価の確認",
+      "summary": "レーダーチャート、フィードバック、差分ランキング、認識一致度スコアを確認",
+      "image_plan": "/home/ubuntu/upload/search_images/7E2dPesFf1LM.png - This slide is about inputting the manager's evaluation and feedback. Image 17 is a graphic about performance review and feedback, which is highly relevant.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "career_map_step1",
+      "title": "キャリアマップの作成（1/2）",
+      "summary": "長期ビジョン（3年後、5年後の目標）を入力",
+      "image_plan": "/home/ubuntu/upload/pasted_file_CZ68E9_image.png - The slide lists the 6 evaluation items, which are professional competencies. Image 6 shows hands stacked together, symbolizing teamwork, support, and professional collaboration, which fits the context of professional evaluation items.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "career_map_step2",
+      "title": "キャリアマップの作成（2/2）",
+      "summary": "STEP1〜3に半期ごとの目標と定量目標を追加",
+      "image_plan": "/home/ubuntu/upload/search_images/TBVg8iSmHj2S.png - The slide is about checking the career map. Image 13 is a visual representation of a career plan/path, which directly matches the slide content.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "growth_graph",
+      "title": "成長グラフの確認",
+      "summary": "過去の評価履歴を時系列で確認し、成長推移グラフで成長を実感",
+      "image_plan": "/home/ubuntu/upload/pasted_file_YZwimH_image.png - The slide is about adding a new member. Image 5 shows a diverse team celebrating or high-fiving, representing the welcoming of new members and teamwork.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "faq",
+      "title": "よくある質問",
+      "summary": "自己評価の修正、パスワード忘れ、評価結果の表示に関する質問と回答",
+      "image_plan": "/home/ubuntu/upload/search_images/IAxtexefWaam.jpg - The slide is about adding a new evaluation period and managing its progress. Image 19 shows a project progress dashboard with Gantt charts, which visually represents the management of time-bound periods.",
+      "slide_template_key": "",
+      "status": "edited"
+    },
+    {
+      "id": "summary",
+      "title": "まとめ",
+      "summary": "灯SCOREで自分の成長を確認し、温かいフィードバックを受け取り、キャリアマップで未来を描く",
+      "image_plan": "/home/ubuntu/upload/search_images/x5cv8ZfvHVnu.png - This is a Q&A slide about checking self-evaluation status and correcting the manager's evaluation. Image 20 is a generic placeholder and not relevant. Image 21 or 22 are about feedback, but not specifically about status checks. I will use an image related to analytics/status check. Image 20 is a placeholder, so I will select a relevant image from the remaining options. Image 2 is a dashboard/analytics view which is a good fit for checking status.",
+      "slide_template_key": "",
+      "status": "edited"
+    }
+  ]
+}

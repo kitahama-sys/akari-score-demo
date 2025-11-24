@@ -1,0 +1,154 @@
+{
+  "query": "SELECT e.id, e.userId, e.evaluationType, e.evaluationPeriod, e.status, COUNT(es.id) as scoreCount\nFROM evaluations e\nLEFT JOIN evaluationScores es ON e.id = es.evaluationId\nWHERE e.userId = 1170001\nGROUP BY e.id\nORDER BY e.evaluationPeriod DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46BqkDT2eofWM8H.root --database 8NGFXyzBvbriU6UGnrxDYi --execute SELECT e.id, e.userId, e.evaluationType, e.evaluationPeriod, e.status, COUNT(es.id) as scoreCount\nFROM evaluations e\nLEFT JOIN evaluationScores es ON e.id = es.evaluationId\nWHERE e.userId = 1170001\nGROUP BY e.id\nORDER BY e.evaluationPeriod DESC;",
+  "rows": [
+    {
+      "id": "270011",
+      "userId": "1170001",
+      "evaluationType": "self",
+      "evaluationPeriod": "2025-second",
+      "status": "submitted",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270006",
+      "userId": "1170001",
+      "evaluationType": "manager",
+      "evaluationPeriod": "2025-second",
+      "status": "completed",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270017",
+      "userId": "1170001",
+      "evaluationType": "self",
+      "evaluationPeriod": "2025-second",
+      "status": "submitted",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270005",
+      "userId": "1170001",
+      "evaluationType": "self",
+      "evaluationPeriod": "2025-second",
+      "status": "submitted",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270012",
+      "userId": "1170001",
+      "evaluationType": "manager",
+      "evaluationPeriod": "2025-second",
+      "status": "completed",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270018",
+      "userId": "1170001",
+      "evaluationType": "manager",
+      "evaluationPeriod": "2025-second",
+      "status": "completed",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270004",
+      "userId": "1170001",
+      "evaluationType": "manager",
+      "evaluationPeriod": "2025-first",
+      "status": "completed",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270010",
+      "userId": "1170001",
+      "evaluationType": "manager",
+      "evaluationPeriod": "2025-first",
+      "status": "completed",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270015",
+      "userId": "1170001",
+      "evaluationType": "self",
+      "evaluationPeriod": "2025-first",
+      "status": "submitted",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270009",
+      "userId": "1170001",
+      "evaluationType": "self",
+      "evaluationPeriod": "2025-first",
+      "status": "submitted",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270016",
+      "userId": "1170001",
+      "evaluationType": "manager",
+      "evaluationPeriod": "2025-first",
+      "status": "completed",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270003",
+      "userId": "1170001",
+      "evaluationType": "self",
+      "evaluationPeriod": "2025-first",
+      "status": "submitted",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270001",
+      "userId": "1170001",
+      "evaluationType": "self",
+      "evaluationPeriod": "2024-second",
+      "status": "submitted",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270013",
+      "userId": "1170001",
+      "evaluationType": "self",
+      "evaluationPeriod": "2024-second",
+      "status": "submitted",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270007",
+      "userId": "1170001",
+      "evaluationType": "self",
+      "evaluationPeriod": "2024-second",
+      "status": "submitted",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270014",
+      "userId": "1170001",
+      "evaluationType": "manager",
+      "evaluationPeriod": "2024-second",
+      "status": "completed",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270008",
+      "userId": "1170001",
+      "evaluationType": "manager",
+      "evaluationPeriod": "2024-second",
+      "status": "completed",
+      "scoreCount": "45"
+    },
+    {
+      "id": "270002",
+      "userId": "1170001",
+      "evaluationType": "manager",
+      "evaluationPeriod": "2024-second",
+      "status": "completed",
+      "scoreCount": "45"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tuserId\tevaluationType\tevaluationPeriod\tstatus\tscoreCount\n270011\t1170001\tself\t2025-second\tsubmitted\t45\n270006\t1170001\tmanager\t2025-second\tcompleted\t45\n270017\t1170001\tself\t2025-second\tsubmitted\t45\n270005\t1170001\tself\t2025-second\tsubmitted\t45\n270012\t1170001\tmanager\t2025-second\tcompleted\t45\n270018\t1170001\tmanager\t2025-second\tcompleted\t45\n270004\t1170001\tmanager\t2025-first\tcompleted\t45\n270010\t1170001\tmanager\t2025-first\tcompleted\t45\n270015\t1170001\tself\t2025-first\tsubmitted\t45\n270009\t1170001\tself\t2025-first\tsubmitted\t45\n270016\t1170001\tmanager\t2025-first\tcompleted\t45\n270003\t1170001\tself\t2025-first\tsubmitted\t45\n270001\t1170001\tself\t2024-second\tsubmitted\t45\n270013\t1170001\tself\t2024-second\tsubmitted\t45\n270007\t1170001\tself\t2024-second\tsubmitted\t45\n270014\t1170001\tmanager\t2024-second\tcompleted\t45\n270008\t1170001\tmanager\t2024-second\tcompleted\t45\n270002\t1170001\tmanager\t2024-second\tcompleted\t45\n",
+  "stderr": "",
+  "execution_time_ms": 1532
+}

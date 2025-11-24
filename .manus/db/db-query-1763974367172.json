@@ -1,0 +1,13 @@
+{
+  "query": "SELECT id FROM users WHERE username = 'demo-user'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46BqkDT2eofWM8H.root --database 8NGFXyzBvbriU6UGnrxDYi --execute SELECT id FROM users WHERE username = 'demo-user'",
+  "rows": [
+    {
+      "id": "1170001"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\n1170001\n",
+  "stderr": "",
+  "execution_time_ms": 1619
+}
