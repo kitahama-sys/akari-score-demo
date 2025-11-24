@@ -12,9 +12,9 @@ export default function Home() {
     return <Redirect to="/dashboard" />;
   }
 
-  // 未認証の場合はログインページにリダイレクト
+  // デモ環境では未認証でもダッシュボードに直接アクセス
   if (!loading && !isAuthenticated) {
-    return <Redirect to="/login" />;
+    return <Redirect to="/dashboard" />;
   }
 
   if (loading) {
